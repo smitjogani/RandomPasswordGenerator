@@ -1,0 +1,43 @@
+package com.passwordGenerator;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static char randomCharacter()
+	{
+		//Generate characters
+		int random = (int)(Math.random()*62);
+		
+		//break up numbers into numbers,lowercase letters,Uppercase
+		if(random <= 9) {
+			//Number
+		}
+		else if(random <= 35)
+		{
+			//Uppercase Letter
+		}
+		else
+		{
+			//Lowercase Letter
+		}
+	}
+	
+	public static void main(String[] args)
+	{
+		/*
+		 	0 to 9 => 48 to 57 in ASCII
+		 	A to Z => 65 to 90 in ASCII
+		 	a to z => 97 to 122 in ASCII 
+		*/
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("How Many Random Password You Want To Generate? ");
+		int total = sc.nextInt();
+		
+		System.out.println("Enter Required Character : ");
+		int length = sc.nextInt();
+		
+		sc.close();
+	}
+}
